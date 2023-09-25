@@ -9,8 +9,8 @@ Hi, thanks for coming to my site. Please check out my GitHub repository as well.
 
 **Here is a short bio:**
 
-2016 - 2020: Bachelor's Degree at University of Applied Sciences, Mannheim DE
-2019 - 2020: Research Student Assistant at Fraunhofer IGCV, Augsburg DE
+2016 - 2020: Bachelor's Degree at University of Applied Sciences, Mannheim DE 
+2019 - 2020: Research Student Assistant at Fraunhofer IGCV, Augsburg DE 
 2020 - 2020: Bachelor Thesis Project at Fraunhofer IGCV, Augsburg DE 
 2020 - 2023: Master's Degree at University of Stuttgart, Stuttgart DE  
 2021 - 2023: Working Student in Software Engineering, Thales Germany  
