@@ -2,7 +2,7 @@ title: Joel Mwaka
 author: Joel Mwaka
 #email: your-email@domain.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  Temuge Bapurev's blog posts and repositories. 
+  Joel Mwaka's blog posts and repositories. 
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -24,7 +24,6 @@ plainwhite:
     - post
   # generate social links in footer
   social_links:
-    #twitter: samarsault
     github:  joelmwaka
     linkedIn: in/joel-mwaka-5a9469177
 
@@ -35,13 +34,6 @@ plainwhite:
       url: "/repository"
     - title: About Me
       url: "/about"
-      
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
@@ -53,5 +45,4 @@ remote_theme: samarsault/plainwhite-jekyll
 
 plugins:
   - jekyll-seo-tag
-#  - jekyll-feed
 
