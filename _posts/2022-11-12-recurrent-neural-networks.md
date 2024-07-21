@@ -13,7 +13,7 @@ Before getting into recurrent neural networks, let us first take a recap of recu
 
 A general recursive filter or IIR filter with the input x(n) and output y(n) is described by the recursive difference equation:
 
-![Recursive Difference Equation](./images/eqn_recursive_filter.svg)
+![Recursive Difference Equation](https://github.com/joelmwaka/joelmwaka.github.io/blob/main/_posts/images/eqn_recursive_filter.svg)
 
 
 
