@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title:  "Automatic Object Detection Dataset Creation with Python"
 date:   2023-10-29 10:00:00 +0000
 categories: Dataset Classification OpenCV 

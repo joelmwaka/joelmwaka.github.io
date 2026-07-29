@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title:  "A Summary of Recurrent Neural Networks"
 date:   2022-11-12 10:00:00 +0000
 categories: DeepLearning Time-Series RNNs

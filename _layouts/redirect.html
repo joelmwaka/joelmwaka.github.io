@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ site.plainwhite.html_lang | default: 'en' }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redirecting to {{ site.redirect_to }}</title>
+
+  <!-- Tells search engines the new address is the real one, so ranking for the
+       old URLs is consolidated there. Deliberately no "noindex": that would ask
+       crawlers to drop these pages instead of following them to the new site. -->
+  <link rel="canonical" href="{{ site.redirect_to }}">
+
+  <!-- Fallback for visitors with JavaScript disabled. -->
+  <meta http-equiv="refresh" content="0; url={{ site.redirect_to }}">
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 80vh;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      max-width: 32rem;
+      text-align: center;
+      line-height: 1.6;
+      color: #333;
+      background: #fff;
+    }
+    a { color: #0366d6; }
+    @media (prefers-color-scheme: dark) {
+      body { color: #eee; background: #1a1a1a; }
+      a { color: #6cb6ff; }
+    }
+  </style>
+
+  <!-- In <head> so it fires before the body paints, avoiding a flash of the
+       message below. replace() keeps the old URL out of session history, so
+       "back" does not bounce the visitor straight back here. -->
+  <script>window.location.replace("{{ site.redirect_to }}");</script>
+</head>
+
+<body>
+  <main>
+    <p>This site has moved to <a href="{{ site.redirect_to }}">{{ site.redirect_to | remove: "https://" | remove_first: "/" }}</a>.</p>
+    <p>If you are not redirected automatically, <a href="{{ site.redirect_to }}">continue to the new site</a>.</p>
+  </main>
+  <!-- The page body is intentionally not rendered here: every page using this
+       layout should forward, not serve its old content. Do not add a Liquid
+       content tag, not even inside a comment - Liquid interpolates in comments
+       too, which would embed the old content in the served HTML. -->
+</body>
+
+</html>

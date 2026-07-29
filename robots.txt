@@ -1,4 +1,4 @@
+# Crawling stays allowed on purpose: blocking it would stop search engines from
+# ever seeing the redirect and canonical tag pointing at https://joelmwaka.com/
 User-agent: *
 Allow: /
-
-Sitemap: https://joelmwaka.github.io/sitemap.xml

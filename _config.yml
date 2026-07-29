@@ -5,6 +5,11 @@ description: > # this means to ignore newlines until "show_exerpts:"
   Joel Mwaka's blog posts and repositories. 
 show_excerpts: true # set to true to show excerpts on the homepage
 
+# This site has moved. Every page uses _layouts/redirect.html to forward here,
+# and 404.html forwards any other path. Change this one value to retarget the
+# whole site (keep the trailing slash).
+redirect_to: "https://joelmwaka.com/"
+
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 sass:
@@ -13,7 +18,7 @@ plainwhite:
   name: Joel Mwaka
   tagline: Research Engineer, M.Sc.
   date_format: "%b %-d, %Y"
-  sitemap: true # set to true to generate sitemap.xml content
+  sitemap: false # off while redirecting: a sitemap of old URLs only invites crawls of pages that now forward
   #search: true # set to true to enable searchbar
   dark_mode: true # set to true to add dark mode toggle
   portfolio_image: "assets/portfolio_img.png" # the path from the base directory of the site to the image to display (no / at the start)

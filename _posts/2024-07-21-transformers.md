@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title:  "Understanding Transformers"
 date:   2023-10-29 10:00:00 +0000
 categories: NLP LLM Self-Attention
